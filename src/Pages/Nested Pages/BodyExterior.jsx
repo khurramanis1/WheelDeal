@@ -3,61 +3,157 @@ import Navbar from "../../Components/Navbar";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
-import bodycladding from "/Pics/body exterior img/Body Cladding.webp";
-import BumperReinforcement from "/Pics/body exterior img/Bumper Reinforcement Bar.webp";
-import DoorMoulding from "/Pics/body exterior img/Door Moulding.webp";
-import DoorShell from "/Pics/body exterior img/Door Shell.webp";
-import DoorSeal from "/Pics/body exterior img/Door Weatherstrip Seal.webp";
-import FogLightCover from "/Pics/body exterior img/Fog Light Cover.webp";
-import FrontBumper from "/Pics/body exterior img/Front Bumper.webp";
-import FrontWindShield from "/Pics/body exterior img/Front WindShield.webp";
-import MudFlaps from "/Pics/body exterior img/Mud Flaps.webp";
-import QuarterPanel from "/Pics/body exterior img/Quarter Panel.webp";
-import RearBumper from "/Pics/body exterior img/Rear Bumper.webp";
-import RearWindshield from "/Pics/body exterior img/Rear Windshield.webp";
-import RockerPanel from "/Pics/body exterior img/Rocker Panel.webp";
-import RoofPanel from "/Pics/body exterior img/Roof Panel.webp";
-import SideSkirts from "/Pics/body exterior img/Side Skirts.webp";
-import SideWindowGlass from "/Pics/body exterior img/Side Window Glass.webp";
+import bodycladding from "/Pics/body-exterior-img/Body Cladding.webp";
+import BumperReinforcement from "/Pics/body-exterior-img/Bumper Reinforcement Bar.webp";
+import DoorMoulding from "/Pics/body-exterior-img/Door Moulding.webp";
+import DoorShell from "/Pics/body-exterior-img/Door Shell.webp";
+import DoorSeal from "/Pics/body-exterior-img/Door Weatherstrip Seal.webp";
+import FogLightCover from "/Pics/body-exterior-img/Fog Light Cover.webp";
+import FrontBumper from "/Pics/body-exterior-img/Front Bumper.webp";
+import FrontWindShield from "/Pics/body-exterior-img/Front Windshield.webp";
+import MudFlaps from "/Pics/body-exterior-img/Mud Flaps.webp";
+import QuarterPanel from "/Pics/body-exterior-img/Quarter Panel.webp";
+import RearBumper from "/Pics/body-exterior-img/Rear Bumper.webp";
+import RearWindshield from "/Pics/body-exterior-img/Rear Windshield.webp";
+import RockerPanel from "/Pics/body-exterior-img/Rocker Panel.webp";
+import RoofPanel from "/Pics/body-exterior-img/Roof Panel.webp";
+import SideSkirts from "/Pics/body-exterior-img/Side Skirts.webp";
+import SideWindowGlass from "/Pics/body-exterior-img/Side Window Glass.webp";
 
 import Footer from "../../Components/Footer";
 
 // Product list
 const products = [
-  { id: "p001", name: "Body Cladding", image: bodycladding, description: "...", price: "17,000" },
-  { id: "p002", name: "Bumper Reinforcement Bar", image: BumperReinforcement, description: "...", price: "3,000" },
-  { id: "p003", name: "Door Moulding", image: DoorMoulding, description: "...", price: "17,000" },
-  { id: "p004", name: "Door Shell", image: DoorShell, description: "...", price: "15,000" },
-  { id: "p005", name: "Door Weatherstrip Seal", image: DoorSeal, description: "...", price: "2,800" },
-  { id: "p006", name: "Fog Light Cover", image: FogLightCover, description: "...", price: "7,500" },
-  { id: "p007", name: "Front Bumper", image: FrontBumper, description: "...", price: "15,000" },
-  { id: "p008", name: "Front Windshield", image: FrontWindShield, description: "...", price: "13,500" },
-  { id: "p009", name: "Mud Flaps", image: MudFlaps, description: "...", price: "6,000" },
-  { id: "p010", name: "Quarter Panel", image: QuarterPanel, description: "...", price: "15,000" },
-  { id: "p011", name: "Rear Bumper", image: RearBumper, description: "...", price: "8,600" },
-  { id: "p012", name: "Rear Windshield", image: RearWindshield, description: "...", price: "14,000" },
-  { id: "p013", name: "Rocker Panel", image: RockerPanel, description: "...", price: "20,000" },
-  { id: "p014", name: "Roof Panel", image: RoofPanel, description: "...", price: "25,000" },
-  { id: "p015", name: "Side Skirts", image: SideSkirts, description: "...", price: "25,000" },
-  { id: "p016", name: "Side Window Glass", image: SideWindowGlass, description: "...", price: "5,000" },
+  {
+    id: "p001",
+    name: "Body Cladding",
+    image: bodycladding,
+    description: "...",
+    price: "17,000",
+  },
+  {
+    id: "p002",
+    name: "Bumper Reinforcement Bar",
+    image: BumperReinforcement,
+    description: "...",
+    price: "3,000",
+  },
+  {
+    id: "p003",
+    name: "Door Moulding",
+    image: DoorMoulding,
+    description: "...",
+    price: "17,000",
+  },
+  {
+    id: "p004",
+    name: "Door Shell",
+    image: DoorShell,
+    description: "...",
+    price: "15,000",
+  },
+  {
+    id: "p005",
+    name: "Door Weatherstrip Seal",
+    image: DoorSeal,
+    description: "...",
+    price: "2,800",
+  },
+  {
+    id: "p006",
+    name: "Fog Light Cover",
+    image: FogLightCover,
+    description: "...",
+    price: "7,500",
+  },
+  {
+    id: "p007",
+    name: "Front Bumper",
+    image: FrontBumper,
+    description: "...",
+    price: "15,000",
+  },
+  {
+    id: "p008",
+    name: "Front Windshield",
+    image: FrontWindShield,
+    description: "...",
+    price: "13,500",
+  },
+  {
+    id: "p009",
+    name: "Mud Flaps",
+    image: MudFlaps,
+    description: "...",
+    price: "6,000",
+  },
+  {
+    id: "p010",
+    name: "Quarter Panel",
+    image: QuarterPanel,
+    description: "...",
+    price: "15,000",
+  },
+  {
+    id: "p011",
+    name: "Rear Bumper",
+    image: RearBumper,
+    description: "...",
+    price: "8,600",
+  },
+  {
+    id: "p012",
+    name: "Rear Windshield",
+    image: RearWindshield,
+    description: "...",
+    price: "14,000",
+  },
+  {
+    id: "p013",
+    name: "Rocker Panel",
+    image: RockerPanel,
+    description: "...",
+    price: "20,000",
+  },
+  {
+    id: "p014",
+    name: "Roof Panel",
+    image: RoofPanel,
+    description: "...",
+    price: "25,000",
+  },
+  {
+    id: "p015",
+    name: "Side Skirts",
+    image: SideSkirts,
+    description: "...",
+    price: "25,000",
+  },
+  {
+    id: "p016",
+    name: "Side Window Glass",
+    image: SideWindowGlass,
+    description: "...",
+    price: "5,000",
+  },
 ];
 
 // Card animation
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
 // Modal background
 const modalBackdropVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5 } }
+  visible: { opacity: 1, transition: { duration: 0.5 } },
 };
 
 // Modal animation
 const modalVariants = {
   hidden: { opacity: 0, y: 70 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 function BodyExterior() {
@@ -165,7 +261,9 @@ function BodyExterior() {
                     {selectedProduct.name}
                   </h2>
 
-                  <p className="text-gray-700 mb-4">{selectedProduct.description}</p>
+                  <p className="text-gray-700 mb-4">
+                    {selectedProduct.description}
+                  </p>
 
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-red-600 font-bold text-xl">
@@ -175,7 +273,9 @@ function BodyExterior() {
 
                   <button
                     onClick={() =>
-                      navigate("/order", { state: { product: selectedProduct } })
+                      navigate("/order", {
+                        state: { product: selectedProduct },
+                      })
                     }
                     className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded-lg"
                   >
