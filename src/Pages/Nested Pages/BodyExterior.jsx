@@ -3,22 +3,22 @@ import Navbar from "../../Components/Navbar";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
-import bodycladding from "../../../public/Pics/body exterior img/Body Cladding.webp";
-import BumperReinforcement from "../../../public/Pics/body exterior img/Bumper Reinforcement Bar.webp";
-import DoorMoulding from "../../../public/Pics/body exterior img/Door Moulding.webp";
-import DoorShell from "../../../public/Pics/body exterior img/Door Shell.webp";
-import DoorSeal from "../../../public/Pics/body exterior img/Door Weatherstrip Seal.webp";
-import FogLightCover from "../../../public/Pics/body exterior img/Fog Light Cover.webp";
-import FrontBumper from "../../../public/Pics/body exterior img/Front Bumper.webp";
-import FrontWindShield from "../../../public/Pics/body exterior img/Front WindShield.webp";
-import MudFlaps from "../../../public/Pics/body exterior img/Mud Flaps.webp";
-import QuarterPanel from "../../../public/Pics/body exterior img/Quarter Panel.webp";
-import RearBumper from "../../../public/Pics/body exterior img/Rear Bumper.webp";
-import RearWindshield from "../../../public/Pics/body exterior img/Rear Windshield.webp";
-import RockerPanel from "../../../public/Pics/body exterior img/Rocker Panel.webp";
-import RoofPanel from "../../../public/Pics/body exterior img/Roof Panel.webp";
-import SideSkirts from "../../../public/Pics/body exterior img/Side Skirts.webp";
-import SideWindowGlass from "../../../public/Pics/body exterior img/Side Window Glass.webp";
+import bodycladding from "/Pics/body exterior img/Body Cladding.webp";
+import BumperReinforcement from "/Pics/body exterior img/Bumper Reinforcement Bar.webp";
+import DoorMoulding from "/Pics/body exterior img/Door Moulding.webp";
+import DoorShell from "/Pics/body exterior img/Door Shell.webp";
+import DoorSeal from "/Pics/body exterior img/Door Weatherstrip Seal.webp";
+import FogLightCover from "/Pics/body exterior img/Fog Light Cover.webp";
+import FrontBumper from "/Pics/body exterior img/Front Bumper.webp";
+import FrontWindShield from "/Pics/body exterior img/Front WindShield.webp";
+import MudFlaps from "/Pics/body exterior img/Mud Flaps.webp";
+import QuarterPanel from "/Pics/body exterior img/Quarter Panel.webp";
+import RearBumper from "/Pics/body exterior img/Rear Bumper.webp";
+import RearWindshield from "/Pics/body exterior img/Rear Windshield.webp";
+import RockerPanel from "/Pics/body exterior img/Rocker Panel.webp";
+import RoofPanel from "/Pics/body exterior img/Roof Panel.webp";
+import SideSkirts from "/Pics/body exterior img/Side Skirts.webp";
+import SideWindowGlass from "/Pics/body exterior img/Side Window Glass.webp";
 
 import Footer from "../../Components/Footer";
 
