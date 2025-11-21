@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 const RefundPolicy = () => {
   return (
@@ -88,12 +89,12 @@ const RefundPolicy = () => {
             <p className="text-gray-600 mb-4">
               Our customer support team is always ready to assist you.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block bg-red-600 hover:bg-red-700 transition text-white font-semibold px-6 py-3 rounded-lg shadow"
             >
               Contact Support
-            </a>
+            </Link>
           </div>
 
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 const HelpCenter = () => {
   return (
@@ -89,12 +90,12 @@ const HelpCenter = () => {
           <p className="text-gray-300 mb-6">
             Our support team is available 24/7 to assist you.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition"
           >
             Contact Support
-          </a>
+          </Link>
         </div>
       </div>
       <Footer />

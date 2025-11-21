@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 const TermsAndConditions = () => {
   return (
@@ -139,12 +140,12 @@ const TermsAndConditions = () => {
               If you have any questions about these terms, feel free to reach
               out to our support team.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block bg-red-600 hover:bg-red-700 transition text-white font-semibold px-6 py-3 rounded-lg shadow"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
 
         </div>
