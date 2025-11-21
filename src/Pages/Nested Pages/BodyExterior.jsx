@@ -22,118 +22,134 @@ import SideWindowGlass from "/Pics/body-exterior-img/Side Window Glass.webp";
 
 import Footer from "../../Components/Footer";
 
-// Product list
+// Product list with detailed descriptions
 const products = [
   {
     id: "p001",
     name: "Body Cladding",
     image: bodycladding,
-    description: "...",
+    description:
+      "A durable protective layer attached to the exterior panels of your vehicle. It shields the body from minor dents, scratches, and weather-related damage, enhancing both the aesthetics and longevity of your car’s surface. Made from high-quality materials, it adds a rugged, stylish look while preventing rust and corrosion.",
     price: "17,000",
   },
   {
     id: "p002",
     name: "Bumper Reinforcement Bar",
     image: BumperReinforcement,
-    description: "...",
+    description:
+      "This robust metal bar is installed behind the front or rear bumper to absorb and distribute impact energy during collisions. It plays a crucial role in protecting the vehicle’s frame and occupants by minimizing damage in minor to moderate accidents, ensuring safety and structural integrity.",
     price: "3,000",
   },
   {
     id: "p003",
     name: "Door Moulding",
     image: DoorMoulding,
-    description: "...",
+    description:
+      "A sleek trim piece that runs along the edges or sides of car doors. It protects doors from scratches, dings, and minor impacts, especially in parking lots. Besides functionality, it enhances the vehicle’s profile with a clean and polished appearance.",
     price: "17,000",
   },
   {
     id: "p004",
     name: "Door Shell",
     image: DoorShell,
-    description: "...",
+    description:
+      "The main structural component of the car door, providing the foundation for hinges, windows, locks, and internal panels. Crafted with precision, it offers strength and durability, ensuring passenger safety and contributing to the overall vehicle integrity.",
     price: "15,000",
   },
   {
     id: "p005",
     name: "Door Weatherstrip Seal",
     image: DoorSeal,
-    description: "...",
+    description:
+      "A flexible rubber or synthetic seal fitted around the door frame to prevent water, dust, and wind noise from entering the cabin. It maintains climate control efficiency inside the car and improves ride comfort by reducing external noise.",
     price: "2,800",
   },
   {
     id: "p006",
     name: "Fog Light Cover",
     image: FogLightCover,
-    description: "...",
+    description:
+      "A protective casing designed to shield fog lights from debris, moisture, and damage. It helps maintain optimal light output and clarity, improving visibility during adverse weather conditions such as fog, rain, or snow.",
     price: "7,500",
   },
   {
     id: "p007",
     name: "Front Bumper",
     image: FrontBumper,
-    description: "...",
+    description:
+      "The front bumper acts as the first line of defense against collisions. Made of impact-resistant materials, it absorbs shocks and protects vital components like the radiator and engine. It also adds to the vehicle’s aesthetic appeal with a stylish front fascia.",
     price: "15,000",
   },
   {
     id: "p008",
     name: "Front Windshield",
     image: FrontWindShield,
-    description: "...",
+    description:
+      "A critical safety component made from laminated safety glass, providing a clear view of the road while protecting passengers from wind, debris, and harsh weather. It also contributes to the car’s structural strength and supports airbag deployment in accidents.",
     price: "13,500",
   },
   {
     id: "p009",
     name: "Mud Flaps",
     image: MudFlaps,
-    description: "...",
+    description:
+      "Installed behind wheels, mud flaps prevent mud, water, and stones from being thrown up onto the vehicle body or other vehicles. They help keep the car cleaner, protect paintwork, and reduce the risk of damage from road debris.",
     price: "6,000",
   },
   {
     id: "p010",
     name: "Quarter Panel",
     image: QuarterPanel,
-    description: "...",
+    description:
+      "The rear side panel of the car extending from the door to the trunk area. It provides structural support and protects internal components. Quarter panels are also vital for the vehicle’s aerodynamic profile and visual appeal.",
     price: "15,000",
   },
   {
     id: "p011",
     name: "Rear Bumper",
     image: RearBumper,
-    description: "...",
+    description:
+      "Similar to the front bumper, the rear bumper absorbs impacts from behind, safeguarding the rear chassis and passenger safety. It is designed to minimize repair costs and enhance the car’s rear-end appearance.",
     price: "8,600",
   },
   {
     id: "p012",
     name: "Rear Windshield",
     image: RearWindshield,
-    description: "...",
+    description:
+      "Made from tempered glass, the rear windshield provides rear visibility and protects occupants from external elements. It also adds structural integrity to the vehicle and often includes defrosting elements for clear vision in cold weather.",
     price: "14,000",
   },
   {
     id: "p013",
     name: "Rocker Panel",
     image: RockerPanel,
-    description: "...",
+    description:
+      "The section beneath the doors connecting the front and rear wheel wells. It supports the vehicle’s weight and protects the undercarriage from road damage and debris, contributing to overall body rigidity and stability.",
     price: "20,000",
   },
   {
     id: "p014",
     name: "Roof Panel",
     image: RoofPanel,
-    description: "...",
+    description:
+      "The top exterior part of the vehicle, providing protection from weather and contributing to structural strength. A well-maintained roof panel ensures safety in rollover accidents and adds to the aesthetic flow of the vehicle’s design.",
     price: "25,000",
   },
   {
     id: "p015",
     name: "Side Skirts",
     image: SideSkirts,
-    description: "...",
+    description:
+      "Aerodynamic panels attached to the sides beneath the doors that improve airflow and reduce drag. They also offer protection against road debris and enhance the sporty look of the vehicle.",
     price: "25,000",
   },
   {
     id: "p016",
     name: "Side Window Glass",
     image: SideWindowGlass,
-    description: "...",
+    description:
+      "Tempered or laminated glass installed on the car’s side doors or panels. Provides visibility and protection from external elements while contributing to passenger safety with shatter-resistant properties.",
     price: "5,000",
   },
 ];
@@ -194,6 +210,7 @@ function BodyExterior() {
                 <img
                   src={product.image}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt={product.name}
                 />
               </div>
 
@@ -255,15 +272,12 @@ function BodyExterior() {
                   <img
                     src={selectedProduct.image}
                     className="w-full h-48 object-cover rounded-lg mb-4"
+                    alt={selectedProduct.name}
                   />
 
-                  <h2 className="text-2xl font-bold mb-2">
-                    {selectedProduct.name}
-                  </h2>
+                  <h2 className="text-2xl font-bold mb-2">{selectedProduct.name}</h2>
 
-                  <p className="text-gray-700 mb-4">
-                    {selectedProduct.description}
-                  </p>
+                  <p className="text-gray-700 mb-4">{selectedProduct.description}</p>
 
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-red-600 font-bold text-xl">
